@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mySwiper {
+    margin-top: 10%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+
+.swiper-slide img {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+
+.container .s3-card {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+
+}
+
+.container .s3-card:hover {
+    -webkit-box-shadow: 0px 4px 27px 14px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 4px 27px 14px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 27px 14px rgba(0, 0, 0, 0.22);
+}
+
+.container .s3-card img {
+    width: 350px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.container .s3-title {
+    margin-left: 1.5rem;
+    color: #14183E;
+    margin-right: 1rem;
+}
+
+.container .s3-card a {
+
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    color: #14183E;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+}
+
+.cart {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+}
+
+.cart .poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.cart .poster::before {
+    content: '';
+    bottom: -250px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #353e49 50%, transparent);
+    transition: .6s;
+    z-index: 1;
+}
+
+.cart:hover .poster::before {
+    bottom: 0;
+}
+
+.cart .poster img {
+    width: 100%;
+    transition: .6s;
+}
+
+.cart:hover .poster img {
+    transform: translatey(-50px);
+    filter: blur(5px);
+}
+
+.cart .details {
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    transition: .5s;
+}
+
+.cart:hover .details {
+    bottom: 0;
+}
+
+.cart .details h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+}
+
+.cart .details .info {
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124.5%;
+}
+
+.cart .details .travel {
+    display: flex;
+    margin-top: 7px;
+
+}
+
+.cart .details .travel ion-icon {
+
+    color: #fff;
+    margin-top: 2px;
+    padding-right: 5px;
+}
+
+.cart .details .continent {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cart .details .continent a {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 124.5%;
+}
+
+.cart .details .travel .days {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 124.5%;
+}
+
+.cart .details a:hover,
+.cart .details .travel a:hover {
+    font-weight: 600;
+}
+
+#Germany:active {
+    margin-bottom: 20px;
+}

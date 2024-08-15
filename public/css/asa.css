@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 6%;
+
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 999999;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #212832;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #212832;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #212832;
+    margin: 30px 0;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #212832;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #212832;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #212832;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #212832;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    color: #212832;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #212832;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btnk {
+    width: 100%;
+    height: 40px;
+    background: #212832;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #212832;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #212832;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a.head {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+    color: #212832;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+.sticky ul li a {
+    color: #000;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    color: #212832;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: #212832;
+    font-weight: 400;
+}
+
+section div a:hover {
+    color: #212832;
+    font-weight: 600;
+}
+
+.container input {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 421px;
+    height: 68px;
+}
+
+::placeholder {
+    color: #39425D;
+
+}
+
+.container input[type=text] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 53px;
+    border-radius: 10px;
+    background: #FFF;
+    z-index: 1;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main_container {
+    margin: 6% 0 0 36%;
+    position: relative;
+    width: 26%;
+}
+
+.image {
+
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 30px;
+}
+
+.main_container:hover .overlay {
+    height: 100%;
+}
+
+.overlay h1 {
+    width: 100%;
+    margin-top: 30%;
+    color: #fff;
+    font-size: 4vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'Dubai', sans-serif;
+    transform: rotate(-5deg)skewX(-5deg);
+}
+
+.overlay h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    margin: 20% 0 0 18%;
+    width: 70%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+
+}
+
+.product {
+    cursor: pointer;
+}
+
+.products-priview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    z-index: 999999;
+}
+
+.products-priview.active {
+    display: inline-block;
+}
+
+.products-priview .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    display: none;
+    margin: 2rem;
+}
+
+.products-priview .preview.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-priview .preview img {
+    height: 35rem;
+    border-radius: 25px;
+}
+
+.products-priview .preview .fas {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #d22d2d;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.products-priview .preview h3,
+.price {
+    color: #7c81b4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 22px;
+    /* 162.5% */
+}
+
+.products-priview .price {
+    color: #d22d2d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 22px;
+    /* 162.5% */
+}
+
+
+
+.products-priview .preview .stars {
+    padding-top: 40px;
+    width: 30%;
+}
+
+.products-priview .preview h1 {
+    color: #2c3386;
+    font-family: 'Volkhov', serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 1%;
+    margin-left: 0;
+}
+
+.stars .buy {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 170px;
+    height: 60px;
+    color: #7c81b4;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: #5E6282;
+    box-shadow: 0 20px 35px 0 rgba(157, 150, 141, 0.15);
+}
+
+li a.active {
+    color: #212832;
+    font-weight: 600;
+}
+
+.flight {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 170px;
+    height: 60px;
+    color: #8084af;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: #5E6282;
+    box-shadow: 0 20px 35px 0 rgba(44, 42, 42, 0.15);
+    display: flex;
+    justify-content: center;
+}

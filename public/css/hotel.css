@@ -1,0 +1,307 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    margin: 0;
+    font-size: 12px;
+}
+
+.corusel {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.corusel .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.corusel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.corusel .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 49%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0 5px 10px #0004;
+}
+
+.corusel .list .item .content .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.corusel .list .item .content .title,
+.corusel .list .item .content .topic {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.corusel .list .item .content .topic {
+    color: #f1683a;
+}
+
+.corusel .list .item .content .button {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.corusel .list .item .content button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.corusel .list .item .content button:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+.thumbmail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbmail .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbmail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.thumbmail .item .content {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+
+.thumbmail .item .content .title {
+    font-weight: bold;
+}
+
+.arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+}
+
+.arrows button:hover {
+    background-color: #eee;
+    color: #555;
+}
+
+.corusel .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+.corusel .list .item:nth-child(1) .author,
+.corusel .list .item:nth-child(1) .title,
+.corusel .list .item:nth-child(1) .topic,
+.corusel .list .item:nth-child(1) .des,
+.corusel .list .item:nth-child(1) .button {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.corusel .list .item:nth-child(1) .title {
+    animation-delay: 1.2s;
+}
+
+.corusel .list .item:nth-child(1) .topic {
+    animation-delay: 1.4s;
+}
+
+.corusel .list .item:nth-child(1) .des {
+    animation-delay: 1.6s;
+}
+
+.corusel .list .item:nth-child(1) .button {
+    animation-delay: 1.8s;
+}
+
+.corusel.next .list .item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+.corusel.next .thumbmail .item:nth-last-child(1) {
+    width: 0;
+    overflow: hidden;
+    animation: showThumbmail .5s linear 1 forwards;
+}
+
+@keyframes showThumbmail {
+    to {
+        width: 150px;
+    }
+}
+
+.corusel.next .thumbmail {
+    transform: translateX(150px);
+    animation: transformTumnmail .5s linear 1 forwards;
+}
+
+@keyframes transformTumnmail {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.corusel.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.corusel.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage .5s linear 1 forwards;
+}
+
+@keyframes outImage {
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+
+}
+
+.corusel.prev .thumbmail .item:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbmail .5s linear 1 forwards;
+}
+
+.corusel.prev .list .item:nth-child(2) .author,
+.corusel.prev .list .item:nth-child(2) .title,
+.corusel.prev .list .item:nth-child(2) .topic,
+.corusel.prev .list .item:nth-child(2) .des,
+.corusel.prev .list .item:nth-child(2) .button {
+    animation: contentOut 1.5s linear 1 forwards;
+}
+
+@keyframes contentOut {
+    to {
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.corusel.next .arrows button,
+.corusel.prev .arrows button {
+    pointer-events: none;
+}
+
+.time {
+    width: 0;
+    height: 3px;
+    background-color: #f1683a;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+}
+
+.corusel.next .time,
+.corusel.prev .time {
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+    to {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .corusel .list .item .content {
+        padding-right: 0;
+    }
+
+    .corusel .list .item .content .title {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Desitnations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet " href="css/desitantion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;500&family=Poppins:wght@500;700&family=Volkhov&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/asa.css">
+    <link rel="stylesheet" href="css/assa.css">
+
+
+</head>
+
+<body>
+    <header class="">
+        <a href="index.html" class="logo"><img class="ass" src="img/icon/img_2.png"></a>
+        <ul>
+            <li><a href="#" class="active head">Desitnations</a></li>
+            <li><a class="head" href="hotel.html">Hotels</a></li>
+            <li><a class="head" href="Flight.html">Flights</a></li>
+            <li><a class="head" href="booking.html">Bookings</a></li>
+            <li><a href="#" class="btnLogin-popup head">Login</a></li>
+            <li><a href="#" class="btnSign-up-popup head">Sign up</a></li>
+            <li class="nav-item dropdown ff">
+                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Eng
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                    <li><a class="dropdown-item" href="#">Fra</a></li>
+                    <li><a class="dropdown-item" href="#">Isp</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btnk"> Login</button>
+                <div class="login-register">
+                    <p>Don't have an account<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registrasion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btnk" id="submit"> Login</button>
+                <div class="login-register">
+                    <p>Already have an account<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Paris</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Paris" class="">France, Paris</a>
+                            <a href="#Paris" class="">$15k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Paris"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Paris" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--Paris -->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/25/5b/66/255b6611756aa2bac18bb72d0b79f353.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Italy</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Italy" class="">Italy</a>
+                            <a href="#Italy" class="">$12k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Italy"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Italy" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!--Italy -->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/4a/65/c7/4a65c711882446b20ddb5893b39b926b.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Austry</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Austry" class="">Austry</a>
+                            <a href="#Austry" class="">$12k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Austry"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Austry" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!--Austry-->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/5e/89/fd/5e89fd9df4016211af975e17adea2ff8.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Germany</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Germany" class="">Germany</a>
+                            <a href="#Germany" class="">$12k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Germany"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Germany" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!--Germany -->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/15/01/32/1501329419f406fc51ef020d61b5ff33.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>London</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#London" class="">England, London</a>
+                            <a href="#London" class="">$15k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#London"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#London" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!--London -->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/1a/0e/7a/1a0e7ab08543b8a8f034fa85dbf5c616.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Greece</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Greece" class="">Greece</a>
+                            <a href="#Greece" class="">$16k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Greece"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Greece" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!--Greece -->
+            <div class="swiper-slide">
+                <div class="cart">
+                    <div class="poster">
+                        <img src="https://i.pinimg.com/564x/51/2e/e2/512ee28ca1d5c22ed36310f1d3c4dcec.jpg">
+                    </div>
+                    <div class="details">
+                        <h1>Budapest</h1>
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae ea odit
+                                officiis provident quisquam.</p>
+                        </div>
+                        <div class="continent">
+                            <a href="#Budapest" class="">Budapest</a>
+                            <a href="#Budapest" class="">$1&k</a>
+                        </div>
+                        <div class="travel ">
+                            <a href="#Budapest"><ion-icon name="paper-plane"></ion-icon></a>
+                            <a href="#Budapest" class="days">7 Days Trip</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!--Budapest -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="destan">
+
+            </div>
+            <div class="destan"></div>
+            <div class="destan"></div>
+            <div class="destan"></div>
+            <div class="destan"></div>
+            <div class="destan"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container product-container">
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/e1/c0/d4/e1c0d4f68035dd44fd458c45ac2e7b89.jpg" alt="">
+                <div id="Germany" class="s3-title">
+                    <h1 id="Italy">Germany</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum officiis optio pariatur perspiciatis possimus quae reprehenderit
+                        sed similique!</p>
+                    <a class="product " data-name="p-4" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/79/18/68/791868963b64118f8e0947ea17e573b9.jpg" alt="">
+                <div class="s3-title">
+                    <h1 id="Paris">Italy</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur culpa dolores ea esse eveniet exercitationem id illo in
+                        inventore iste itaque iure magni minus mollitia nemo nesciunt nostrum officiis optio pariatur
+                        perspiciatis possimus quae reprehenderit sed similique!</p>
+                    <a class="product" data-name="p-2" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/6a/99/ee/6a99ee843798375c5f7049316e8d31ed.jpg" alt="">
+                <div class="s3-title">
+                    <h1 id="London">Paris</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum officiis optio pariatur perspiciatis possimus quae reprehenderit
+                        sed similique!</p>
+                    <a class="product" data-name="p-1" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/f9/44/65/f9446525c345fa4b3dec6e77297bf53e.jpg" alt="">
+                <div class="s3-title">
+                    <h1 id="Budapest">London</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum!</p>
+                    <a class="product" data-name="p-5" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/eb/8f/2a/eb8f2a63acb36633cbf554298ffcc500.jpg" alt="">
+                <div class="s3-title">
+                    <h1 id="Greece">Budapest</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum officiis optio pariatur perspiciatis possimus quae reprehenderit
+                        sed similique!</p>
+                    <a class="product" data-name="p-7" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/0a/50/09/0a5009712dcd1ae9fb28f300a26aced2.jpg" alt="">
+                <div class="s3-title">
+                    <h1 id="Austry">Greece</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum officiis optio pariatur perspiciatis possimus quae reprehenderit
+                        sed similique!</p>
+                    <a class="product" data-name="p-6" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://i.pinimg.com/564x/12/c4/82/12c482df51fd93706565f63d54821e8a.jpg" alt="">
+                <div class="s3-title">
+                    <h1>Austria</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus accusantium, consectetur
+                        culpa dolores ea esse eveniet exercitationem id illo in inventore iste itaque iure magni minus
+                        mollitia nemo nesciunt nostrum officiis optio pariatur perspiciatis possimus quae reprehenderit
+                        sed similique!</p>
+                    <a class="product" data-name="p-3" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="products-priview">
+            <div class="preview " data-target="p-1">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Paris</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$15k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Paris -->
+            <div class="preview " data-target="p-2">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/25/5b/66/255b6611756aa2bac18bb72d0b79f353.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Italy</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$12k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Italy -->
+            <div class="preview " data-target="p-3">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/4a/65/c7/4a65c711882446b20ddb5893b39b926b.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Austry</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$14k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Austry -->
+            <div class="preview " data-target="p-4">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/5e/89/fd/5e89fd9df4016211af975e17adea2ff8.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Germany</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$12k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Germany -->
+            <div class="preview " data-target="p-5">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/15/01/32/1501329419f406fc51ef020d61b5ff33.jpg" alt="">
+
+                <div class="stars">
+                    <h1>London</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$14k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--London -->
+            <div class="preview " data-target="p-6">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/1a/0e/7a/1a0e7ab08543b8a8f034fa85dbf5c616.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Greece</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$16k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Greece -->
+            <div class="preview " data-target="p-7">
+                <ion-icon class="fas" name="close-outline"></ion-icon>
+                <img src="https://i.pinimg.com/564x/51/2e/e2/512ee28ca1d5c22ed36310f1d3c4dcec.jpg" alt="">
+
+                <div class="stars">
+                    <h1>Budapest</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut commodi consectetur
+                        dolore dolorem eveniet excepturi fugiat impedit itaque laboriosam laudantium minus natus neque
+                        nobis non perferendis praesentium quas quidem quod reprehenderit sequi sit tenetur ullam, vero
+                        voluptatibus voluptatum?</h3>
+                    <div class="price">$17k</div>
+                    <div class="button">
+                        <a href="booking.html" class="buy">Booking</a>
+
+                    </div>
+                </div>
+            </div><!--Budapest -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-light  " style="margin-top: 15%;">
+        <!-- Grid container -->
+        <div class="container  ">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4  ">
+                    <h4 class="ftxt1">Jadoo.</h4>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <p class="ftxt2">Book your trip in minute, get full
+                                Control for much longer.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class=" h51">Company</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="atxt">About</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Mobile</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class="h51">Contact</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="atxt">Help/FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Affilates</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class=" h51">More</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="atxt">Airlinefees</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Airline</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Low fare tips</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled">
+                        <li class="li">
+                            <ion-icon class="fimg" name="logo-facebook"></ion-icon>
+                            <ion-icon class="fimg" name="logo-instagram"></ion-icon>
+                            <ion-icon class="fimg" name="logo-twitter"></ion-icon>
+                        </li>
+                        <li>
+                            <a href="#" class="atxt1">Discover our app</a>
+                        </li>
+                        <li>
+                            <img class="limg" src="img/icon/img_21.png">
+                            <img class="limg" src="img/icon/img_22.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 mte" style="background-color: #FFFFFF">
+            All rights reserved@jadoo.co
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <style>
+        .wrapper {
+            margin-top: -50px;
+        }
+    </style>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSSCUFCqO9AoHdFIhxjDd2Lee6oXHrmRc",
+            authDomain: "data-4be38.firebaseapp.com",
+            databaseURL: "https://data-4be38-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "data-4be38",
+            storageBucket: "data-4be38.appspot.com",
+            messagingSenderId: "332945660890",
+            appId: "1:332945660890:web:96d3d27d4823da618ffee3"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault()
+
+            set(ref(db, 'user/' + document.getElementById("username").value),
+                {
+
+                    username: document.getElementById("username").value,
+                    email: document.getElementById("email").value,
+                    password: document.getElementById("password").value
+                })
+            alert("Login Sucessfull   !")
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

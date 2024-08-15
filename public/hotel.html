@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Flights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;500&family=Poppins:wght@500;700&family=Volkhov&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/asa.css">
+    <link rel="stylesheet" href="css/assa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hotel.css">
+    <link rel="stylesheet" href="css/desitantion.css">
+</head>
+
+<body>
+    <header class="">
+        <a href="index.html" class="logo"><img class="ass" src="img/icon/img_2.png"></a>
+        <ul>
+            <li><a href="Desitantions.html" class="head">Desitnations</a></li>
+            <li><a class="head active" href="#">Hotels</a></li>
+            <li><a class="head " href="Flight.html">Flights</a></li>
+            <li><a class="head" href="booking.html">Bookings</a></li>
+            <li><a href="#" class="btnLogin-popup head">Login</a></li>
+            <li><a href="#" class="btnSign-up-popup head">Sign up</a></li>
+            <li class="nav-item dropdown ff">
+                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Eng
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                    <li><a class="dropdown-item" href="#">Fra</a></li>
+                    <li><a class="dropdown-item" href="#">Isp</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btnk"> Login</button>
+                <div class="login-register">
+                    <p>Don't have an account<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registrasion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btnk" id="submit"> Login</button>
+                <div class="login-register">
+                    <p>Already have an account<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section>
+        <div class="corusel">
+            <div class="list">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">TURKEY</div>
+                        <div class="topic">BY BHUMBIL</div>
+                        <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam
+                            architecto aspernatur assumenda atque culpa cumque deserunt dignissimos, dolor dolores ea
+                            eius eos error esse eum eveniet facere fugit harum iusto labore laudantium libero molestias
+                            obcaecati odio odit officia officiis porro qui temporibus totam vero vitae voluptates?
+                            Debitis, incidunt!</div>
+                        <div class="button">
+                            <button type="button" onclick="window.location.href='#Turkey';">SEE MORE</button>
+                            <button type="button" onclick="window.location.href='booking.html';">BOOKING</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">THAILAND</div>
+                        <div class="topic">AO NANG</div>
+                        <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam
+                            architecto aspernatur assumenda atque culpa cumque deserunt dignissimos, dolor dolores ea
+                            eius eos error esse eum eveniet facere fugit harum iusto labore laudantium libero molestias
+                            obcaecati odio odit officia officiis porro qui temporibus totam vero vitae voluptates?
+                            Debitis, incidunt!</div>
+                        <div class="button">
+                            <button type="button" onclick="window.location.href='#Thailand';">SEE MORE</button>
+                            <button type="button" onclick="window.location.href='booking.html';">BOOKING</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">SAINT JULIAN</div>
+                        <div class="topic">MALTE</div>
+                        <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam
+                            architecto aspernatur assumenda atque culpa cumque deserunt dignissimos, dolor dolores ea
+                            eius eos error esse eum eveniet facere fugit harum iusto labore laudantium libero molestias
+                            obcaecati odio odit officia officiis porro qui temporibus totam vero vitae voluptates?
+                            Debitis, incidunt!</div>
+                        <div class="button">
+                            <button type="button" onclick="window.location.href='#Saint_julian';">SEE MORE</button>
+                            <button type="button" onclick="window.location.href='booking.html';">BOOKING</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">SWITZERLAND</div>
+                        <div class="topic">WALENSEE</div>
+                        <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam
+                            architecto aspernatur assumenda atque culpa cumque deserunt dignissimos, dolor dolores ea
+                            eius eos error esse eum eveniet facere fugit harum iusto labore laudantium libero molestias
+                            obcaecati odio odit officia officiis porro qui temporibus totam vero vitae voluptates?
+                            Debitis, incidunt!</div>
+                        <div class="button">
+                            <button type="button" onclick="window.location.href='#Switzerland';">SEE MORE</button>
+                            <button type="button" onclick="window.location.href='booking.html';">BOOKING</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1598598795009-f80c5072e665?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">TURKEY</div>
+                        <div class="topic">AYDIN</div>
+                        <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam
+                            architecto aspernatur assumenda atque culpa cumque deserunt dignissimos, dolor dolores ea
+                            eius eos error esse eum eveniet facere fugit harum iusto labore laudantium libero molestias
+                            obcaecati odio odit officia officiis porro qui temporibus totam vero vitae voluptates?
+                            Debitis, incidunt!</div>
+                        <div class="button">
+                            <button type="button" onclick="window.location.href='#Turkey_1';">SEE MORE</button>
+                            <button type="button" onclick="window.location.href='booking.html';">BOOKING</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="thumbmail ">
+
+                <div class="item">
+                    <img
+                        src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="content">
+                        <div class="title">Thailand</div>
+                        <div class="des">Ao Nang</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="content">
+                        <div class="title">Saint julian</div>
+                        <div class="des">Malte</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="content">
+                        <div class="title">Switzerland</div>
+                        <div class="des">Walensee</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://images.unsplash.com/photo-1598598795009-f80c5072e665?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="content">
+                        <div class="title">Turkey</div>
+                        <div class="des">Aydin</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="content">
+                        <div class="title">Turkey</div>
+                        <div class="des">by Bhumbil</div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows" id="Turkey">
+                <button id="prev"><</button>
+                        <button id="next">></button>
+            </div>
+            <div class="time"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="s3-card">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="s3-title">
+                    <h1 id="Thailand">Turkey</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur . Aperiam atque ducimus eaque hic laudantium, modi
+                        necessitatibus optio provident voluptatem? Blanditiis culpa deleniti doloremque dolorum illo
+                        iure maxime minus mollitia, nobis possimus quaerat quasi rerum vero. Doloremque in laborum
+                        maiores maxime reiciendis? Culpa dolorum in molestiae soluta! Ad amet corporis eius explicabo
+                        placeat provident quo. Aliquam debitis iusto nobis. Blanditiis dolores, laboriosam obcaecati
+                        possimus reprehenderit rerum vel.</p>
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="s3-title">
+                    <h1 id="Saint_julian">Thailand</h1>
+                    <p>Lorem ipsum dolor sit amet, adipisicing elit. Atque consequatur doloribus laborum magnam, omnis
+                        provident? Ab accusantium animi cum eveniet, fugit illum iusto mollitia nemo pariatur quaerat,
+                        quam quia, reprehenderit? Ab fugit ipsum nostrum quam quas quidem? Amet blanditiis corporis
+                        debitis excepturi nisi numquam suscipit tenetur veniam. Ab architecto aspernatur blanditiis
+                        dicta facilis, molestias possimus quas quia. Blanditiis, cupiditate dignissimos doloribus minus
+                        possimus sint vero voluptas?</p>
+
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="s3-title">
+                    <h1 id="Switzerland">Saint julian</h1>
+                    <p>Lorem sit amet, consectetur adipisicing elit. Atque consequatur doloribus laborum magnam, omnis
+                        provident? Ab accusantium animi cum eveniet, fugit illum iusto mollitia nemo pariatur quaerat,
+                        quam quia, reprehenderit? Ab fugit ipsum nostrum quam quas quidem? Amet blanditiis corporis
+                        debitis excepturi nisi numquam suscipit tenetur veniam. Ab architecto aspernatur blanditiis
+                        dicta facilis, molestias possimus quas quia. Blanditiis, cupiditate dignissimos doloribus minus
+                        possimus sint vero voluptas?</p>
+
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="s3-title">
+                    <h1 id="Turkey_1">Switzerland</h1>
+                    <p>Lorem ipsum dolor , consectetur adipisicing elit. Atque consequatur doloribus laborum magnam,
+                        omnis provident? Ab accusantium animi cum eveniet, fugit illum iusto mollitia nemo pariatur
+                        quaerat, quam quia, reprehenderit? Ab fugit ipsum nostrum quam quas quidem? Amet blanditiis
+                        corporis debitis excepturi nisi numquam suscipit tenetur veniam. Ab architecto aspernatur
+                        blanditiis dicta facilis, molestias possimus quas quia. Blanditiis, cupiditate dignissimos
+                        doloribus minus possimus sint vero voluptas?</p>
+
+                </div>
+            </div>
+            <div class="s3-card">
+                <img src="https://images.unsplash.com/photo-1598598795009-f80c5072e665?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <div class="s3-title">
+                    <h1>Turkey</h1>
+                    <p>Lorem ipsum dolor sit , consectetur adipisicing elit. Atque consequatur doloribus laborum magnam,
+                        omnis provident? Ab accusantium animi cum eveniet, fugit illum iusto mollitia nemo pariatur
+                        quaerat, quam quia, reprehenderit? Ab fugit ipsum nostrum quam quas quidem? Amet blanditiis
+                        corporis debitis excepturi nisi numquam suscipit tenetur veniam. Ab architecto aspernatur
+                        blanditiis dicta facilis, molestias possimus quas quia. Blanditiis, cupiditate dignissimos
+                        doloribus minus possimus sint vero voluptas?</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-light  " style="margin-top: 15%;">
+        <!-- Grid container -->
+        <div class="container  ">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4  ">
+                    <h4 class="ftxt1">Jadoo.</h4>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <p class="ftxt2">Book your trip in minute, get full
+                                Control for much longer.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class=" h51">Company</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="atxt">About</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Mobile</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class="h51">Contact</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="atxt">Help/FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Affilates</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <h5 class=" h51">More</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="atxt">Airlinefees</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Airline</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="atxt">Low fare tips</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled">
+                        <li class="li">
+                            <ion-icon class="fimg" name="logo-facebook"></ion-icon>
+                            <ion-icon class="fimg" name="logo-instagram"></ion-icon>
+                            <ion-icon class="fimg" name="logo-twitter"></ion-icon>
+                        </li>
+                        <li>
+                            <a href="#" class="atxt1">Discover our app</a>
+                        </li>
+                        <li>
+                            <img class="limg" src="img/icon/img_21.png">
+                            <img class="limg" src="img/icon/img_22.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 mte" style="background-color: #FFFFFF">
+            All rights reserved@jadoo.co
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+   
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSSCUFCqO9AoHdFIhxjDd2Lee6oXHrmRc",
+            authDomain: "data-4be38.firebaseapp.com",
+            databaseURL: "https://data-4be38-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "data-4be38",
+            storageBucket: "data-4be38.appspot.com",
+            messagingSenderId: "332945660890",
+            appId: "1:332945660890:web:96d3d27d4823da618ffee3"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault()
+
+            set(ref(db, 'user/' + document.getElementById("username").value),
+                {
+
+                    username: document.getElementById("username").value,
+                    email: document.getElementById("email").value,
+                    password: document.getElementById("password").value
+                })
+            alert("Login Sucessfull   !")
+        })
+    </script>
+</body>
+
+</html>
